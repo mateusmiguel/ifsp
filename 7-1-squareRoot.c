@@ -13,30 +13,12 @@ int main(int argc, char *argv[]) {
 	  printf("Enter the %s number: ", ordinals[i], i + 1);
 		scanf("%f", &v[i]);
 		sum = sum + v[i];	
+	  v[i] = v[i]*v[i];
+		printf("The square of the number is %.1f \n", v[i]);
+		
 	}
 	
-	printf("\n");
-	
-		printf("%f", sum);
-	for (i=0;i<5; i++) {
-		printf("you typed %.1f \n", v[i]);
-	}
-	
-	
-
-	
-	
-//	for (i=0; i<10; i++) {
-//		soma = soma + v[i];	
-//	}
-//	
-//	printf("\nO valor da soma eh:%d", soma);
-
-  	
-	//fazer os cauclos
-
-	// somar e exibir o resultadoi
-
+	printf("The sum of the five numbers is: %.2f \n", sum);
 
 	return 0;
 }
