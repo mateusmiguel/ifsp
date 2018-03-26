@@ -11,14 +11,16 @@
 
 int main(int argc, char *argv[]) {
 	float salary;
+	char exit = ' ';
 	
-	int exit = 0;
-	
-	while (exit !=0) {
-		printf("tentativa!");
+	while(exit != 'n' && exit != 'N') {
+		//calcs
 		
-		printf("Deseja conitnuar? (Press any key for exit )");
-	}
-
+		//condition to continue
+		printf ("Do you want to continue? Press any key for continue or 'n' to exit. ");
+		exit = getchar();
+		getchar();
+	}	
+	
     return 0;
 }
